@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <div class="header_img_box">
+          <a href="#"><img src="images/LOGO1.png" alt="BeerLine" /></a>
+        </div>
+        <div class="Header_link_block">
+          <a href="#about" class="header_link">О нас</a>
+          <a href="#catalog" class="header_link">Каталог</a>
+          <a href="#order" class="header_link">Заказать</a>
+        </div>
+        <a href="tel:+78142332211" class="header_link contact"
+          ><img src="images/phone.png" alt="Телефон" />+7 (8142) 33-22-11</a
+        >
+      </div>
+    </header>
+    <main>
+      <div class="welcome TextOnImage_container">
+        <!-- <img
+          src="images/pexels-michelle-riach-276396-995686.jpg"
+          alt="BeerLine"
+        /> -->
+        <video
+          class="backvideo"
+          preload="auto"
+          loop="loop"
+          poster="images/pexels-michelle-riach-276396-995686.jpg"
+          autoplay="autoplay"
+          muted
+        >
+          <source src="images/video2.mp4" type="video/mp4" />
+        </video>
+        <h1 class="TextOnImage">Крафтовое пиво в каждый дом</h1>
+      </div>
+
+      <div style="width: 100%; text-align: center">
+        <a name="about"></a>
+        <h2>— О нас —</h2>
+        <p
+          style="
+            width: 900px;
+            text-align: center;
+            display: inline-block;
+            margin-top: 20px;
+          "
+        >
+          "Beer Line" — это частная пивоварня, сочетающая мастерство пивоварения
+          с уникальным подходом к созданию авторского пива. Основанная истинными
+          ценителями хмельного напитка, пивоварня гордится своим многолетним
+          опытом и стремлением к совершенству в каждом бокале.
+
+          <br /><br />Одним из главных преимуществ "Beer Line" является
+          использование только натуральных ингредиентов высочайшего качества,
+          что позволяет создавать сорта пива с насыщенным вкусом и богатым
+          ароматом. Каждая партия тщательно контролируется на всех этапах
+          производства, что обеспечивает стабильность и исключительный вкус
+          готового продукта.
+
+          <br /><br />Вдохновляясь классическими рецептами, пивовары "Beer Line"
+          не боятся экспериментировать, добавляя современные акценты и необычные
+          ингредиенты, чтобы порадовать даже самых требовательных гурманов.
+          Такой подход позволил компании завоевать репутацию надежного
+          производителя, который всегда на шаг впереди в мире крафтового пива.
+
+          <br /><br />Особое внимание в "Beer Line" уделяется общению с
+          клиентами и партнерами. Пивоварня готова учитывать индивидуальные
+          пожелания и адаптировать рецептуру, создавая напитки, идеально
+          подходящие для конкретных мероприятий или заведений. Такой
+          персонализированный подход делает сотрудничество с "Beer Line"
+          особенно ценным.
+
+          <br /><br />За годы работы пивоварня стала не просто производителем,
+          но и местом, где рождаются идеи и воплощается страсть к пиву. "Beer
+          Line" — это не просто бренд, а философия, объединяющая традиции,
+          инновации и подлинное удовольствие от вкуса.
+        </p>
+      </div>
+      <a name="catalog"></a>
+      <h2 class="dark_back">— Каталог —</h2>
+
+      <div class="catalog">
+        <button class="catalog_btn" onclick="Catalog_left()">←</button>
+        <div class="catalog_item">
+          <img src="images/Beers/bourbon.jpg" alt="Bourbon" />
+          <h2>Burbon Creek</h2>
+          <div style="display: flex">
+            <p class="catalog_item_info">Стаут</p>
+            <p class="catalog_item_info price">140₽</p>
+          </div>
+        </div>
+        <div class="catalog_item">
+          <img src="images/Beers/bam.jpg" alt="Bam" class="Showed" />
+          <h2>The Bam</h2>
+          <div style="display: flex">
+            <p class="catalog_item_info">Эль</p>
+            <p class="catalog_item_info price">110₽</p>
+          </div>
+        </div>
+        <div class="catalog_item">
+          <img src="images/Beers/cha.jpg" alt="Cha" />
+          <h2>Original Chai</h2>
+          <div style="display: flex">
+            <p class="catalog_item_info">Эль</p>
+            <p class="catalog_item_info price">160₽</p>
+          </div>
+        </div>
+        <div class="catalog_item hidden_item">
+          <img src="images/Beers/golden.jpg" alt="Golden" />
+          <h2>Original Chai</h2>
+          <div style="display: flex">
+            <p class="catalog_item_info">Эль</p>
+            <p class="catalog_item_info price">160₽</p>
+          </div>
+        </div>
+        <div class="catalog_item hidden_item">
+          <img src="images/Beers/hefe.jpg" alt="Hefe" />
+          <h2>Original Chai</h2>
+          <div style="display: flex">
+            <p class="catalog_item_info">Эль</p>
+            <p class="catalog_item_info price">160₽</p>
+          </div>
+        </div>
+        <div class="catalog_item hidden_item">
+          <img src="images/Beers/Root.jpg" alt="Root" />
+          <h2>Original Chai</h2>
+          <div style="display: flex">
+            <p class="catalog_item_info">Эль</p>
+            <p class="catalog_item_info price">160₽</p>
+          </div>
+        </div>
+        <div class="catalog_item hidden_item">
+          <img src="images/Beers/stout.jpg" alt="Stout" />
+          <h2>Original Chai</h2>
+          <div style="display: flex">
+            <p class="catalog_item_info">Эль</p>
+            <p class="catalog_item_info price">160₽</p>
+          </div>
+        </div>
+        <div class="catalog_item hidden_item">
+          <img src="images/Beers/beer9.jpg" alt="IPA" />
+          <h2>Original Chai</h2>
+          <div style="display: flex">
+            <p class="catalog_item_info">Эль</p>
+            <p class="catalog_item_info price">160₽</p>
+          </div>
+        </div>
+        <button class="catalog_btn" onclick="Catalog_right()">→</button>
+      </div>
+      <form onsubmit="return Call_Me(event)" class="call_form" id="form">
+        <div>
+          <a name="order"></a>
+          <h2>— Заказать по телефону —</h2>
+          <div class="input_block">
+            <label for="phone">Введите номер телефона</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              class="call_input"
+              value=""
+              placeholder="+7 (9__) ___-__-__"
+              oninput="phone_mask()"
+              maxlength="18"
+            />
+            <label for="name"> Введите дату звонка</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="call_input"
+              placeholder="Введите имя"
+            />
+
+            <input type="submit" class="call_btn" value="Заказать" />
+          </div>
+        </div>
+      </form>
+      <a name="map"></a>
+      <h2 class="dark_back" style="padding-top: 20px">— Где нас найти —</h2>
+      <div class="map_block">
+        <div class="map_info" id="map_info">
+          <img src="images/Location.png" alt="Location:" />
+          <span>г. Смоленск ул. Рыленоква 74</span>
+        </div>
+        <script
+          type="text/javascript"
+          charset="utf-8"
+          async
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab7085f1e39df3173e39b95a3009473d6df784625c90c2d10c69f5d1b82f29796&amp;width=1200&amp;height=400&amp;lang=ru_RU&amp;scroll=true"
+        ></script>
+      </div>
+    </main>
+    <footer>
+      <div class="left_footer">
+        <a href="#about" class="footer_link">О нас</a>
+        <a href="#catalog" class="footer_link">Каталог</a>
+        <a href="#order" class="footer_link">Заказать</a>
+        <a href="#map" class="footer_link">Карта</a>
+      </div>
+      <div class="center_footer">
+        <img src="images/LOGO1.png" alt="BeerLine" />
+      </div>
+      <div class="right_footer">
+        <a href="##"
+          ><img src="images/inst.png" alt="instagram" /><span
+            >instagram</span
+          ></a
+        >
+        <a href="##"
+          ><img src="images/tg.png" alt="telegram" /><span>Telegram</span></a
+        >
+        <a href="##"
+          ><img src="images/yt.png" alt="youtube" /><span>YouTube</span></a
+        >
+      </div>
+    </footer>
+  </body>
+  <script src="JavaScript.js"></script>
+</html>
